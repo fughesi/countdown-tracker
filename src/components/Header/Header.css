@@ -1,1 +1,12 @@
 @import url("../../App.css");
+
+#headerMain {
+    grid-area: a;
+
+    padding: 5em 0 .5em 0;
+
+    text-align: center;
+    color: var(--White);
+    word-break: break-all;
+    letter-spacing: .65em;
+}

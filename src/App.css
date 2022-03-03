@@ -4,7 +4,7 @@
   --softRed: hsl(345, 95%, 68%);
   --grayBlue: hsl(237, 18%, 59%);
   --desatBlue: hsl(236, 21%, 26%);
-  --darkblue: hsl(235, 16%, 14%);
+  --darkBlue: hsl(235, 16%, 14%);
   --blueBlack: hsl(234, 17%, 12%);
 
   /* WEIGHTS */
@@ -17,10 +17,32 @@
 *::after {
   box-sizing: border-box;
 
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
+}
+
+*::selection {
+  color: var(--White);
+  background: tomato;
 }
 
 body {
   margin: 0;
+  height: 100vh;
   font-family: "Red Hat Text", sans-serif;
+
+  background: var(--darkBlue) url("./images/bg-stars.svg") no-repeat;
+  /* background: url("./images/pattern-hills.svg") no-repeat bottom; */
+  object-fit: cover;
+}
+
+.appWrap {
+  position: relative;
+  height: 100vh;
+
+  display: grid;
+  grid-template: 150px 250px minmax(200px, 1fr) / 10px calc(100vw - 20px) 10px;
+  grid-template-areas: 
+    ". a ."
+    ". b ."
+    ". c .";
 }

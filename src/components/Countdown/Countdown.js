@@ -1,7 +1,8 @@
 import React from 'react'
+import "./Countdown.css"
 
 export default function Countdown() {
   return (
-    <div>Countdown</div>
+    <main id="countdownMain">Countdown</main>
   )
 }

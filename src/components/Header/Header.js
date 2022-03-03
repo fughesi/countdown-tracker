@@ -1,7 +1,10 @@
-import React from 'react'
+import React from "react";
+import "./Header.css"
 
 export default function Header() {
   return (
-    <div>Header</div>
-  )
+    <main id="headerMain">
+      <h1>WE'RE LAUNCHING SOON</h1>
+    </main>
+  );
 }

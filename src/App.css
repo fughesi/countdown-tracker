@@ -31,18 +31,29 @@ body {
   font-family: "Red Hat Text", sans-serif;
 
   background: var(--darkBlue) url("./images/bg-stars.svg") no-repeat;
-  /* background: url("./images/pattern-hills.svg") no-repeat bottom; */
   object-fit: cover;
 }
 
 .appWrap {
   position: relative;
   height: 100vh;
+  background: url("./images/pattern-hills.svg") no-repeat bottom;
 
+  animation: fadeIn 2500ms ease-in;
+  
   display: grid;
   grid-template: 150px 250px minmax(200px, 1fr) / 10px calc(100vw - 20px) 10px;
   grid-template-areas: 
     ". a ."
     ". b ."
     ". c .";
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

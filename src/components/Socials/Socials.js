@@ -1,17 +1,16 @@
 import React from "react";
-import "./Socials.css"
+import "./Socials.css";
 import Facebook from "../../images/Facebook";
-// import Instagram from "../../images/icon-instagram.svg";
-// import Pinterest from "../../images/icon-pinterest.svg";
+import Instagram from "../../images/Instagram";
+import Pinterest from "../../images/Pinterest";
 
 export default function Socials() {
   return (
     <main id="socialsMain">
       <div className="socialsContainer">
         <Facebook />
-        {/* <Facebook />
+        <Pinterest />
         <Instagram />
-        <Pinterest /> */}
       </div>
     </main>
   );

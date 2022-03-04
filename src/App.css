@@ -17,7 +17,7 @@
 *::after {
   box-sizing: border-box;
 
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
 }
 
 *::selection {
@@ -37,12 +37,11 @@ body {
 .appWrap {
   position: relative;
   height: 100vh;
-  background: url("./images/pattern-hills.svg") no-repeat bottom;
 
   animation: fadeIn 2500ms ease-in;
   
   display: grid;
-  grid-template: 150px 250px minmax(200px, 1fr) / 10px calc(100vw - 20px) 10px;
+  grid-template: 150px minmax(100px, 1fr) minmax(100px, 1fr) / 10px calc(100vw - 20px) 10px;
   grid-template-areas: 
     ". a ."
     ". b ."

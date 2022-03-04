@@ -8,9 +8,9 @@ export default function Socials() {
   return (
     <main id="socialsMain">
       <div className="socialsContainer">
-        <Facebook />
-        <Pinterest />
-        <Instagram />
+        <a href="#"><Facebook /></a>
+        <a href="#"><Pinterest /></a>
+        <a href="#"><Instagram /></a>
       </div>
     </main>
   );

@@ -2,4 +2,26 @@
 
 #socialsMain {
   grid-area: c;
+  height: 100%;
+
+  background: url("../../images/pattern-hills.svg") no-repeat bottom center;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.socialsContainer {
+  display: flex;
+  margin: 0 0 1.2em;
+}
+
+.socialsContainer > * {
+  margin: 0;
+  padding: 2em;
+  cursor: pointer;
+}
+
+.socialsContainer a div {
+  display: flex;
 }

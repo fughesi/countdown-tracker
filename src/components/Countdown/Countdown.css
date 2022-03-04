@@ -1,5 +1,21 @@
 @import url("../../App.css");
 
 #countdownMain {
-    grid-area: b;
+  grid-area: b;
+}
+
+.timer {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  place-content: center;
+  place-items: center;
+}
+
+.timer > li {
+  padding: 0 1.5em;
+  list-style: none;
+  font-weight: var(--bold);
+  color: var(--grayBlue);
 }

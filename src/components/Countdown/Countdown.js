@@ -46,12 +46,32 @@ export default function Countdown(props) {
 
   return (
     <main id="countdownMain">
-      <ul className="timer">
-        <li>{day}DAYS</li>
-        <li>{hours}HOURS</li>
-        <li>{minutes}MINUTES</li>
-        <li>{seconds}SECONDS</li>
-      </ul>
+      <section className="timerTable">
+        <div>
+          <div className="BG">
+            <span className="time">{day}</span>
+          </div>
+          <p>DAYS</p>
+        </div>
+        <div>
+          <div className="BG">
+            <span className="time">{hours}</span>
+          </div>
+          <p>HOURS</p>
+        </div>
+        <div>
+          <div className="BG">
+            <span className="time">{minutes}</span>
+          </div>
+          <p>MINUTES</p>
+        </div>
+        <div>
+          <div className="BG">
+            <span className="time">{seconds}</span>
+          </div>
+          <p>SECONDS</p>
+        </div>
+      </section>
     </main>
   );
 }

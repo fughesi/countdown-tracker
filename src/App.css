@@ -1,8 +1,8 @@
 :root {
   /* COLOR */
   --White: hsl(0, 0%, 100%);
-  --softRed: hsl(345, 95%, 68%);
-  --grayBlue: hsl(237, 18%, 59%);
+  --softRed: hsl(345, 95%, 55%);
+  --grayBlue: hsl(237, 18%, 20%);
   --desatBlue: hsl(236, 21%, 26%);
   --darkBlue: hsl(235, 16%, 14%);
   --blueBlack: hsl(234, 17%, 12%);
@@ -17,7 +17,7 @@
 *::after {
   box-sizing: border-box;
 
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 *::selection {
@@ -28,6 +28,7 @@
 body {
   margin: 0;
   height: 100vh;
+  scroll-behavior: smooth;
   font-family: "Red Hat Text", sans-serif;
 
   background: var(--darkBlue) url("./images/bg-stars.svg") no-repeat;
@@ -36,16 +37,18 @@ body {
 
 .appWrap {
   position: relative;
+  overflow: hidden;
   height: 100vh;
+  width: 100vw;
 
-  animation: fadeIn 2500ms ease-in;
+  animation: fadeIn 1500ms ease-in;
   
   display: grid;
-  grid-template: 150px minmax(100px, 1fr) minmax(100px, 1fr) / 10px calc(100vw - 20px) 10px;
+  grid-template: 250px minmax(100px, 1fr) minmax(100px, 1fr) / 10px calc(100vw - 20px) 10px;
   grid-template-areas: 
     ". a ."
     ". b ."
-    ". c .";
+    "c c c";
 }
 
 @keyframes fadeIn {

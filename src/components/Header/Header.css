@@ -15,8 +15,30 @@
 }
 
 #headerMain h1 {
-  margin: 0;
-  padding: 1em .1em 0.5em;
+  overflow: hidden;
+  white-space: nowrap;
 
-  align-self: baseline;
+  font-size: 1.1em;
+  align-self: flex-start;
+  border-right: 0.15em solid orange;
+  animation: typing 3.5s steps(30, end), blink-caret 1s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 450px;
+  }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
 }
